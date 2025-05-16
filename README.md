@@ -20,6 +20,10 @@ alembic upgrade head
 ```
 python main.py
 ```
+### Инициализация `alembic`
+```
+alembic init -t async migrations
+```
 
 ### Как создать миграцию
 ```
