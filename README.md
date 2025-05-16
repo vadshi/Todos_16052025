@@ -11,7 +11,17 @@ source todos_venv/bin/activate
 ```
 python -m pip install -r requirements.txt
 ```
-4. Запустить приложение
+4. Применить миграции
+```
+alembic upgrade head
+```
+
+5. Запустить приложение
 ```
 python main.py
+```
+
+### Как создать миграцию
+```
+alembic revision --autogenerate -m "Initial migration"
 ```
