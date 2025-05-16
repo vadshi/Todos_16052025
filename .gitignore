@@ -1,0 +1,12 @@
+.idea/
+.vscode/
+*.py[cod]
+__pycache__/
+*env/
+.env
+*.tmp
+*.db
+*.sqlite3
+*.sqlite
+.pytest/
+.ipynb_checkpoints/
