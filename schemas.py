@@ -20,12 +20,8 @@ class CreateUserRequest(BaseUser):
     password: str 
   
 
-class UserDB(BaseUser):
-    model_config = ConfigDict(from_attributes=True)
-    hashed_password: str = Field(exclude=True)
-    id: int
-
 class UserResponse(BaseUser):
+    model_config = ConfigDict(from_attributes=True)
     id: int
 
 class UserLogin(BaseModel):
